@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+        }
+        .wrapper{
+            height: 450px;
+            width: 350px;
+            box-shadow: 5px 5px 5px 5px rgb(95, 95, 89);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Travel reservation form</h1>
+        <h3>* denotes mandotory</h3>
+        <label for="fname">Full name*:</label> <br>
+        <input type="text" name="txtname" id="fname" placeholder="FirstName LastName">
+        <br>
+        <label for="addr">Email address*:</label> <br>
+        <input type="text" name="txtaddr" id="addr" placeholder="EMAIL_ADDRESS">
+        <br>
+        <label for="tour">Select Tour Package* :</label> <br>
+        <select name="ntour" id="tour">
+            <option >Goa</option>
+        </select>
+        <br>
+        <label for="date">Arrival date*:</label> <br>
+        <input type="text" name="date" id="date" placeholder="m/d/y">
+        <br>
+        <label for="sdt">Number of persons*:</label> <br>
+        <input type="number" name="sdt" id="sdt" placeholder="UNKNOWN_TYPE">
+        <br>
+        <label >What do you want to avail?*</label> <br>
+        <label for="boarding-checkbox">Boarding</label>
+        <input type="checkbox" id="boarding-checkbox" name="boarding" value="1">
+        <br>
+        <label for="fooding-checkbox">Fooding</label>
+        <input type="checkbox" id="fooding-checkbox" name="fooding" value="1">
+        <br>
+        <label for="sightseeing-checkbox">Sight seeing</label>
+        <input type="checkbox" id="sightseeing-checkbox" name="sightseeing" value="1">
+        <br>
+        <label for="discout">Discout Coupon code:</label> <br>
+        <input type="text" name="discout" id="discout" placeholder="UNKNOW_TYPE">
+        <label >Tems and conditions*</label> <br>
+        <label for="select1">I agree</label>
+        <input type="checkbox" name="select1" id="selec1">
+        <label for="select2">I disagree</label>
+        <input type="checkbox" name="select2" id="selec2">
+        <br>
+        <button>Complete reservation</button>
+    </div>
+</body>
+</html>
